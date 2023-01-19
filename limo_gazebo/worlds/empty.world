@@ -3,7 +3,7 @@
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
       <pose>0 0 10 0 -0 0</pose>
-      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
       <specular>0.2 0.2 0.2 1</specular>
       <attenuation>
         <range>1000</range>
@@ -27,7 +27,7 @@
       <real_time_update_rate>1000</real_time_update_rate>
     </physics>
     <scene>
-      <ambient>0.4 0.4 0.4 1</ambient>
+      <ambient>0.7 0.7 0.7 1</ambient>
       <background>0.7 0.7 0.7 1</background>
       <shadows>1</shadows>
     </scene>
@@ -40,17 +40,17 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>126 259000000</sim_time>
-      <real_time>126 707334859</real_time>
-      <wall_time>1674058732 440992399</wall_time>
-      <iterations>126259</iterations>
+      <sim_time>546 321000000</sim_time>
+      <real_time>442 384296723</real_time>
+      <wall_time>1674064995 748752868</wall_time>
+      <iterations>420062</iterations>
       <light name='sun'>
-        <pose>0 0 10 0 -0 0</pose>
+        <pose>0 0 10 0 0 -2.35715</pose>
       </light>
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>19.8303 -20.1943 10.8517 0 0.275643 2.35619</pose>
+        <pose>13.1025 -1.88162 8.7945 0 0.539644 2.69618</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

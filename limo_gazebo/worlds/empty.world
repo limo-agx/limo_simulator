@@ -40,17 +40,17 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>546 321000000</sim_time>
-      <real_time>442 384296723</real_time>
-      <wall_time>1674064995 748752868</wall_time>
-      <iterations>420062</iterations>
+      <sim_time>601 721000000</sim_time>
+      <real_time>56 920212219</real_time>
+      <wall_time>1674315369 133561717</wall_time>
+      <iterations>55400</iterations>
       <light name='sun'>
         <pose>0 0 10 0 0 -2.35715</pose>
       </light>
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>13.1025 -1.88162 8.7945 0 0.539644 2.69618</pose>
+        <pose>-6.09821 -7.22874 10.2864 0 0.723644 0.73618</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

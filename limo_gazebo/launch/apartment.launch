@@ -17,6 +17,4 @@
 
     <node name="apartment_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model apartment -param apartment_urdf" />
     <node name="decorations_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model apartment_decorations -param apartment_decorations_urdf" />
-
-    <!-- include file="$(find limo_gazebo)/launch/spawn_limo.launch" / -->
 </launch>

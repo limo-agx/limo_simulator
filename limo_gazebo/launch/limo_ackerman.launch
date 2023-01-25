@@ -25,7 +25,7 @@
             limo_fl_steering_hinge_controller limo_fr_steering_hinge_controller"/>
 
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
-    <!-- node name="dummy_zero_cmd_vel" pkg="limo_gazebo" type="dummy_zero.py" / -->
+    <node name="dummy_zero_cmd_vel" pkg="limo_gazebo" type="dummy_cmd_vel" />
 
     <include file="$(find limo_control)/launch/control.launch"/>
 </launch>

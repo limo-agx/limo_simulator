@@ -4,7 +4,7 @@ project(limo_gazebo)
 add_compile_options(-std=c++11)
 
 find_package(catkin REQUIRED COMPONENTS    
-   roscpp
+  roscpp
   std_msgs
   sensor_msgs
   geometry_msgs
@@ -27,7 +27,10 @@ include_directories(
 add_library(gazebo_ros_ackerman src/gazebo_ros_ackerman_drive.cpp)
 target_link_libraries(gazebo_ros_ackerman ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 
-install(TARGETS gazebo_ros_ackerman
+add_executable(dummy_cmd_vel src/dummy_cmd_vel.cpp)
+target_link_libraries(dummy_cmd_vel ${catkin_LIBRARIES})
+
+install(TARGETS gazebo_ros_ackerman dummy_cmd_vel
 ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}

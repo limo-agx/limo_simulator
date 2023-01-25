@@ -5,7 +5,8 @@
     <arg name="use_sim_time" default="true" />
     <arg name="gui" default="true" />
     <arg name="headless" default="false" />
-    <arg name="paused" default="true" />
+    <arg name="paused" default="true"/>
+    <arg name="gui_required" default="true"/>
     <arg name="world_name" default="$(find limo_gazebo)/worlds/empty.world" />
 
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -14,6 +15,7 @@
       <arg name="use_sim_time" value="$(arg use_sim_time)" />
       <arg name="headless" value="$(arg headless)" />
       <arg name="paused" value="$(arg paused)" />
+      <arg name="gui_required" value="$(arg gui_required)" />
       <arg name="world_name" value="$(arg world_name)" />
     </include>
 

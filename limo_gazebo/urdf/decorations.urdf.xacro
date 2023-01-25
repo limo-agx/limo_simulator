@@ -17,14 +17,6 @@
       <geometry>
         <mesh filename="package://limo_gazebo/meshes/Decoration.dae"/>
       </geometry>
-      <surface>
-        <friction>
-          <ode>
-            <mu>100</mu>
-            <mu2>50</mu2>
-          </ode>
-        </friction>
-      </surface>
     </collision>
   </link>
   <gazebo>

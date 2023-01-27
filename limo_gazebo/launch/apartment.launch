@@ -1,6 +1,7 @@
 <launch>
     <param name="apartment_urdf" command="$(find xacro)/xacro --inorder '$(find limo_gazebo)/urdf/apartment.urdf.xacro'" />
     <param name="apartment_decorations_urdf" command="$(find xacro)/xacro --inorder '$(find limo_gazebo)/urdf/decorations.urdf.xacro'" />
+    <param name="apartment_floor_urdf" command="$(find xacro)/xacro --inorder '$(find limo_gazebo)/urdf/floor.urdf.xacro'" />
 
     <arg name="use_sim_time" default="true" />
     <arg name="gui" default="true" />
@@ -21,4 +22,5 @@
 
     <node name="apartment_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model apartment -param apartment_urdf" />
     <node name="decorations_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model apartment_decorations -param apartment_decorations_urdf" />
+    <node name="floor_spawner" pkg="gazebo_ros" type="spawn_model" args="-urdf -model apartment_floor -param apartment_floor_urdf" />
 </launch>

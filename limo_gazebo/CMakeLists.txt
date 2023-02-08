@@ -31,9 +31,14 @@ add_executable(dummy_cmd_vel src/dummy_cmd_vel.cpp)
 target_link_libraries(dummy_cmd_vel ${catkin_LIBRARIES})
 
 install(TARGETS gazebo_ros_ackerman dummy_cmd_vel
-ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
+  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
 )
 
-
+if (CATKIN_ENABLE_TESTING)
+  find_package(roslaunch REQUIRED)
+  roslaunch_add_file_check(launch/apartment.launch)
+  roslaunch_add_file_check(launch/limo_ackerman.launch)
+  roslaunch_add_file_check(launch/limo_four_diff.launch)
+endif()

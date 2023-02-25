@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>limo_simulator</name>
+  <version>0.0.0</version>
+  <description>The limo_simulator package</description>
+
+  <maintainer email="support@agilex.ai">agiley</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>limo_gazebo</exec_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
